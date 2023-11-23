@@ -49,12 +49,12 @@ $ python main.py
 ### 1) Long-term project
 - Explore free OCR libraries that can replace Mathpix OCR.
 
-## 5. Precautions
+## 4. Precautions
 - This code is designed to translate English papers into Korean. If you want to translate into another language, you can change the prompt in the translate_content function in openai_f.py. Similarly, if you want to add other conditions to the translation, you can also modify the prompt.
 - If you are not satisfied with the quality of the translation, or if images or equations are omitted, adjusting the max_len argument in the group_chunks function in openai_f.py can sometimes be helpful.
 
 
-## 6. Reference
+## 5. Reference
 - https://platform.openai.com/tokenizer
 - https://github.com/openai/openai-cookbook/blob/main/examples/book_translation/translate_latex_book.ipynb
 - https://docs.mathpix.com/#introduction
