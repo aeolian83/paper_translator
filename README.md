@@ -10,10 +10,16 @@
 - For GPT as well, after registering at https://openai.com/, you move to the API section to prepare for using the API key, and then you can obtain the key.
 
 ### Installation
-- First, copy the git repository to your local environment.
+- Firstly, you may choose to create a virtual environment or not, but using a virtual environment is recommended. As for the Python version, the development was done on version 3.9.7, and it is believed that any version above 3.9 should work without major issues.
+
+- Next, copy the git repository to your local environment.
 
 ```shell
 $ git clone https://github.com/aeolian83/paper_translator.git
 ```
 
-- 
+- Install the requirements using pip.
+
+```shell
+$ pip install -r requirements.txt
+```
