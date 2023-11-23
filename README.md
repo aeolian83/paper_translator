@@ -12,6 +12,8 @@
 ### Installation
 - First, copy the git repository to your local environment.
 
-```$ git clone https://github.com/aeolian83/paper_translator.git```
+```shell
+$ git clone https://github.com/aeolian83/paper_translator.git
+```
 
 - 
