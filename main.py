@@ -3,7 +3,7 @@ import mathpix_f as mf
 import openai_f as oaf
 
 # set file name
-filename = 'test'
+filename = 'test_1'
 headers = mf.headers
 paper_field = oaf.paper_field
 

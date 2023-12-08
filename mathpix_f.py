@@ -12,7 +12,8 @@ def call_api(filename, headers):
     options = {
         "conversion_formats": {"md": True},
         "math_inline_delimiters": ["$", "$"],
-        "rm_spaces": True
+        "rm_spaces": True,
+        "enable_tables_fallback": True,
     }
 
     r = requests.post("https://api.mathpix.com/v3/pdf",
@@ -24,6 +25,7 @@ def call_api(filename, headers):
             "file": open("./pdf/" + filename + ".pdf","rb")
         }
     )
+
 
     return r
 

@@ -1,6 +1,11 @@
-# Paper_translator V0.4
+# Paper_translator V0.4.2
+
 - Paper Translator is a code that translates academic papers using mathpix and chatGPT APIs. It was developed to address various issues such as a significant drop in translation quality and reduced readability of equations that occur when academic papers are fully translated through services like DeepL or Google Translator.
 - When fully translating a paper, a major factor that reduces readability is the improper OCR recognition of images and equations, leading to issues when recreating the document post-translation. Mathpix excels in the OCR process by accurately recognizing images and equations, and converting them into high-quality Latex or Markdown. Additionally, when an article contains equations, the fundamental idea of this code is to use GPT-4, which translates the article more effectively if it includes equations represented in Latex, rather than just the text converted from equations.
+
+### 0.4 -> 0.4.2 Changes
+
+- During the translation process, issues arose from omitting image insertion commands and directly translating certain technical terms, reducing readability. Thus, the prompt has been revised to shift from zero-shot to few-shot. Additionally, in the OCR process using Mathpix, there were issues with the proper recognition of tables, so modifications have been made to improve recognition accuracy in that aspect.
 
 ## 1. Prepare
 
