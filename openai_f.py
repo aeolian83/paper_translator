@@ -124,14 +124,14 @@ Condition 5: Translate quotations, examples, etc., enclosed in double quotes (â€
 '''},
         {"role": "user", "content": f'''Translation Sample
 
-        {tr_example_orgin}
+{tr_example_orgin}
          
 {tr_example_trans}
 '''},
         {"role": "user", "content": f'''Based on the conditions and sample translation provided above, please translate the following English paper written in Markdown into Korean.
 '''},
         {"role": "user", "content": f"""
-        {text}
+{text}
 
 """}
         ]
