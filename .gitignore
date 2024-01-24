@@ -1,5 +1,7 @@
 # folder
-.pranctice/
+.practice/
+.test/
 
 # file
 *.ipynb
+.env

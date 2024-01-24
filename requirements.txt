@@ -1,8 +1,13 @@
+# for LLM
+langchain==0.0.332
+
 # for OpenAI
 openai==1.2.3
 tiktoken
 
+# for GUI
+streamlit==1.27.2
+
 # others
 requests
 tqdm
-
