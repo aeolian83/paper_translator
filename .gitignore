@@ -1,6 +1,7 @@
 # folder
 .practice/
 .test/
+.strealit/
 
 # file
 *.ipynb
