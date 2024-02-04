@@ -2,7 +2,12 @@
 .practice/
 .test/
 .streamlit/
+.html/
+.pdf/
+.markdown/
+__pycache__/
 
 # file
 *.ipynb
 .env
+*.css
