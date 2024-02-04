@@ -89,6 +89,7 @@ $ streamlit run home.py
 
 ### (4) Future work
 
+-   A feature for counting the number of tokens used in translation
 -   Simplification of LLM Prompts reduce API costs.
 -   A feature to check the entire prompt entered into the LLM for error verification
 -   A feature to check grouped chunks
