@@ -181,10 +181,11 @@ except Exception as ex:
             if submitted:
                 os.environ["OPENAI_API_KEY"] = openai_key
                 st.rerun()
-
+st.markdown("## Step 0. Select Model")
+model = st.selectbox("Select GPT Model", ("gpt-4-0125-preview", "gpt-3.5-turbo-0125"))
 try:
     llm = ChatOpenAI(
-        model="gpt-4-1106-preview",
+        model=model,
         temperature=0.01,
         streaming=True,
         callbacks=[
