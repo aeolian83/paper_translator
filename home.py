@@ -4,6 +4,10 @@ import streamlit as st
 import requests
 import json
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 from langchain_openai import ChatOpenAI
 from langchain.callbacks.base import BaseCallbackHandler
 from langchain.prompts import PromptTemplate, ChatPromptTemplate
@@ -11,8 +15,6 @@ from langchain.prompts.few_shot import (
     FewShotPromptTemplate,
     FewShotChatMessagePromptTemplate,
 )
-
-from langchain.schema import HumanMessage
 
 # from langchain.callbacks import StreamingStdOutCallbackHandler
 from openai import OpenAI
