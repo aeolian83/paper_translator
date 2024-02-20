@@ -6,6 +6,11 @@
 .pdf/
 .markdown/
 __pycache__/
+html/
+pdf/
+markdown/
+img/
+
 
 # file
 *.ipynb
