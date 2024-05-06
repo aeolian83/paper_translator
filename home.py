@@ -184,7 +184,7 @@ except Exception as ex:
                 os.environ["OPENAI_API_KEY"] = openai_key
                 st.rerun()
 st.markdown("## Step 0. Select Model")
-model = st.selectbox("Select GPT Model", ("gpt-4-0125-preview", "gpt-3.5-turbo-0125"))
+model = st.selectbox("Select GPT Model", ("gpt-4-turbo", "gpt-3.5-turbo-0125"))
 try:
     llm = ChatOpenAI(
         model=model,
