@@ -43,6 +43,7 @@ if not os.path.exists(html_folder_path):
 if not os.path.exists(pdf_folder_path):
     os.makedirs(pdf_folder_path)
 
+# Check markdown folder
 try:
     check = st.session_state["markdowns"]
     del check
@@ -59,6 +60,7 @@ finally:
             temp_text = f.read()
             st.session_state["markdowns"][os.path.splitext(file)[0]] = temp_text
 
+# Check translated markdown folder(It will be saved in this folder when the translation is complete.)
 try:
     check = st.session_state["translated_markdowns"]
     del check
@@ -79,15 +81,18 @@ finally:
                 os.path.splitext(file)[0]
             ] = temp_text
 
+# Check html session state
 try:
     check = st.session_state["htmls"]
     del check
 except:
     st.session_state["htmls"] = {}
 
+# Define OCR url
 mathpix_url = mf.mathpix_url
 
 
+# Define fuction
 def save_markdown(path, filename, text):
     with open(os.path.join(path, filename + ".md"), "w") as file:
         for line in text:
@@ -116,6 +121,7 @@ class ChatCallbackHandler(BaseCallbackHandler):
         self.message_box.markdown(self.message)
 
 
+# Define prompt
 examples = of.examples
 
 example_prompt = ChatPromptTemplate.from_messages(
@@ -184,7 +190,9 @@ except Exception as ex:
                 os.environ["OPENAI_API_KEY"] = openai_key
                 st.rerun()
 st.markdown("## Step 0. Select Model")
-model = st.selectbox("Select GPT Model", ("gpt-4-0125-preview", "gpt-3.5-turbo-0125"))
+
+
+model = st.selectbox("Select GPT Model", ("gpt-4o", "gpt-3.5-turbo-0125"))
 try:
     llm = ChatOpenAI(
         model=model,
